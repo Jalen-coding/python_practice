@@ -2,7 +2,7 @@ file=input('What file would you like for me to open: ')
 
 sent=[]
 try:
-    with open("/home/judi/Documents/programming/text/"+file) as f:
+    with open(file) as f:
         sent=[word.rstrip() for word in f]
 
 except FileNotFoundError:
